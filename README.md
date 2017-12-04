@@ -1,6 +1,6 @@
-# Hack-UMass-2017 --- SEE Issue for latest update!
+# Apotheca
 
-> Project description here
+> At Hack UMass 2017, our team had 48 hours to scramble together some project to "hack healthcare". You can see the result of our hackathon here.
 
 ## Table of Contents
 
@@ -17,24 +17,18 @@
     - [API](#api)
         - [Algolia](#algolia)
         - [Google Maps](#google-maps)
-  - [Hardware](#hardware)
-    - [Dispenser Device](#dispenser-device)
-- [Competing Prizing](#competing-prizing)
-  - [Currently Eligible](#currently-eligible)
-  - [Planning to be Eligible](#planning-to-be-eligible)
-    - [Priority 1](#priority-1)
-    - [Priority 2](#priority-2)
-    - [Priority 3](#priority-3)
 
 ## Overview
 
+Our project didn't win any awards, but we had an ambitious plan that had many parts successfully implemented. We created a web application with responsive UI that queries the user's current location and then finds pharmacies and doctors in a 25-mile radius. Additionally, we provide a feature so that common health symptoms are matched with over-the-counter drugs.
+
 ### Tools
 
-- Firebase (Prototyping)
-- Node.js (Backend Services)
-- AWS (Alternative to Firebase)
-  - Internet of Things (Messaging protocol with Raspberry Pi)
-  - S3 (Later)
+- Used Google Firebase and JSON for storage of pharmaceutical information and medical symptoms (over the counter pharmaceuticals for legal reasons only): https://firebase.google.com/
+- Implemented Google's slick new Material Design UI design framework: http://materializecss.com/
+- Linked to the Google Maps API to allow the user to search for pharmacies, doctors and hospitals in a 25 mile radius: https://developers.google.com/maps/
+- Used the Algolia Search API to query our JSON database for medicine that relieves symptoms: https://www.algolia.com/
+
 
 [Back to Top](#table-of-contents)
 
@@ -48,16 +42,8 @@ Here is a general overview on the structure of the site.
 
 ```json
 Home page
-	- Dispenser Device Web UI
 	- Pharma Search
 	- Symptom Search
-	* Nice to Have *
-	- About 
-	- Contact
-	- Login
-		- Device Pairing or Registration
-		- Past Symptoms
-		- Bookmarked pharmacy and medicince pair
 ```
 
 [Back to Top](#table-of-contents)
@@ -67,15 +53,10 @@ Home page
 ###### Pharma Search
 
 - Uses Google Maps to find pharmacies in the local area that provide the medicine requested.
-- Showcase the most affordable options. (Nice to have)
 
 ###### Symptom Search
 
 - Uses Algolia to search our database for medicine that will help relieve symptoms a user is suffering from in order of relevance.
-
-###### Dispenser Device Web UI
-
-- Users can pair their online account with the Raspberry Pi device that emulates the basic functions of the medicine dispenser by indicating different states via light sensors.
 
 [Back to Top](#table-of-contents)
 
@@ -94,45 +75,5 @@ Home page
 [Back to Top](#table-of-contents)
 
 ### Hardware
-
-#### Dispenser Device
-
-- ##### (Prototype)
-
-  - Emulate a dispenser programmatically using light sensors to show a pill has been dispersed or a slot is empty
-  - 5 slots for different types of medicine made available which are not specific to a brand or a quantity.
-  - Dispenser will administer one pill at a time from a specific bin based on user input.
-  - Dispenser keeps track of the quantity of pills in each slot.
-
-[Back to Top](#table-of-contents)
-
-## Competing Prizing
-
-### Currently Eligible
-
-- Hardware
-- Website Application
-- Documentation
-- Algolia Search API
-- Best Use of AWS
-
-[Back to Top](#table-of-contents)
-
-### Planning to be Eligible
-
-#### Priority 1
-
-- Best tech domain name
-- Best domain name registered with Domain.com
-
-#### Priority 2
-
-- Optum most creative health hack (Get more information)
-
-#### Priority 3
-
-- Best IOT hack using a qualcomm device (We can dream)
-
-- Considered best designed algorithm by Kensho
 
 [Back to Top](#table-of-contents)
