@@ -8,7 +8,7 @@ We originally intended for our project to be related to an **Automated Pill Disp
 
 You can see a static version of our website at http://apotheca.s3-website.us-east-2.amazonaws.com/ . Because this is a static version of the website, our Google Maps API and Algolia API are currently broken. However, if you get the whole site running locally, you will be able to see the Google Maps API get your current location and find you a pharmacy.
 
-[Back to Top](#table-of-contents)
+[Back to Top](#Apotheca)
 
 ## Steps to get Started
 
@@ -23,7 +23,7 @@ Otherwise, if you want to check out the code, you will find that we have a very 
 - You will find within _/src/public/js_ and _/src/public/css_ very large files, corresponding with Materialize, our CSS framework - we, of course, didn't make these. To those that are interested, Materialize is very similar in terms of implementation to [Twitter's Bootstrap](https://getbootstrap.com/)
 - The JSON files within _/src_ are metadata options for Google Firebase, and you won't have access to these things without the Google Firebase login. As a side note, there is the Google Maps API key listed in there - this is very insecure, and it should be deleted..
 
-[Back to Top](#table-of-contents)
+[Back to Top](#Apotheca)
 
 ## Built With
 
@@ -32,7 +32,7 @@ Otherwise, if you want to check out the code, you will find that we have a very 
 * [Algolia Search](https://www.algolia.com/) - Used the Algolia Search API to query our JSON database for medicine that relieves symptoms, as mentioned above. 
 * [Google Maps API](https://developers.google.com/maps/) - Linked to the Google Maps API to allow the user to search for pharmacies, doctors and hospitals in a 25 mile radius. There are a few issues related to this API, and one glaring issue is that the location finder for Hospitals is hard-coded to UMass Amherst only, as opposed to taking the user's current location.
 
-[Back to Top](#table-of-contents)
+[Back to Top](#Apotheca)
 
 ## Contributing
 
@@ -40,7 +40,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 - We are very graciously stealing that writeup for our own project. Thank you!
 
-[Back to Top](#table-of-contents)
+[Back to Top](#Apotheca)
 
 ## Authors
 
@@ -51,18 +51,18 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 See also the list of [contributors](https://github.com/perrywarner/Hack-UMass-2017/graphs/contributors) who participated in this project.
 
-[Back to Top](#table-of-contents)
+[Back to Top](#Apotheca)
 
 ## License
 
 This project is licensed under the MIT License.
 
-[Back to Top](#table-of-contents)
+[Back to Top](#Apotheca)
 
 ## Acknowledgments
 
 * Great job to Kathy for doing so much with Raspberry Pi and MQTT! Ultimately, this feature was a bit too ambitious for a two-day hackathon, as an Automated Pill Dispenser is something that could take months. We apologize that this Github Repository doesn't reflect just how much time and effort you put into this.
 * Good job to Amanda Morrison for writing a lot of code that ended up in the final version, given that she is still currently taking only the third computer science class: Data Structures!
 
-[Back to Top](#table-of-contents)
+[Back to Top](#Apotheca)
 
