@@ -1,81 +1,3 @@
-## Table of Contents
-
-- [Overview](#overview)
-  - [Tools](#tools)
-  - [Front-End](#front-end)
-    - [Website](#website)
-      - [Tree Structure of Website](#tree-structure-of-website)
-      - [Core Components of the Website](#core-components-of-the-website)
-        - [Pharma Search](#pharma-search)
-        - [Symptom Search](#symptom-search)
-        - [Dispenser Device Web UI](#dispenser-device-web-ui)
-  - [Back End](#back-end)
-    - [API](#api)
-        - [Algolia](#algolia)
-        - [Google Maps](#google-maps)
-
-## Overview
-
-
-
-### Tools
-
-- 
-- Implemented Google's slick new Material Design UI design framework: http://materializecss.com/
-- 
-- 
-
-
-[Back to Top](#table-of-contents)
-
-### Front-End
-
-#### Website
-
-##### Tree Structure of Website
-
-Here is a general overview on the structure of the site.
-
-```json
-Home page
-	- Pharma Search
-	- Symptom Search
-```
-
-[Back to Top](#table-of-contents)
-
-##### Core Components of the Website
-
-###### Pharma Search
-
-- Uses Google Maps to find pharmacies in the local area that provide the medicine requested.
-
-###### Symptom Search
-
-- Uses Algolia to search our database for medicine that will help relieve symptoms a user is suffering from in order of relevance.
-
-[Back to Top](#table-of-contents)
-
-### Back End
-
-#### API
-
-###### Algolia
-
-- Queries database for medicine that relieves symptoms.
-
-###### Google Maps
-
-- Show locations of pharmacies and general stores where medicine may be purchased to relieve symptoms.
-
-[Back to Top](#table-of-contents)
-
-### Hardware
-
-[Back to Top](#table-of-contents)
-
----------------------------------------------------------------
-
 # Apotheca
 
 At Hack UMass 2017, our team had 48 hours to scramble together some project to "hack healthcare". Our project didn't win any awards, but we had an ambitious plan that had many parts successfully implemented. We created a web application with responsive UI that queries the user's current location and then finds pharmacies and doctors in a 25-mile radius. Additionally, we provide a feature so that common health symptoms are matched with over-the-counter drugs.
@@ -85,6 +7,8 @@ We originally intended for our project to be related to an **Automated Pill Disp
 ## Getting Started
 
 You can see a static version of our website at http://apotheca.s3-website.us-east-2.amazonaws.com/ . Because this is a static version of the website, our Google Maps API and Algolia API are currently broken. However, if you get the whole site running locally, you will be able to see the Google Maps API get your current location and find you a pharmacy.
+
+[Back to Top](#table-of-contents)
 
 ## Steps to get Started
 
@@ -99,6 +23,8 @@ Otherwise, if you want to check out the code, you will find that we have a very 
 - You will find within _/src/public/js_ and _/src/public/css_ very large files, corresponding with Materialize, our CSS framework - we, of course, didn't make these. To those that are interested, Materialize is very similar in terms of implementation to [Twitter's Bootstrap](https://getbootstrap.com/)
 - The JSON files within _/src_ are metadata options for Google Firebase, and you won't have access to these things without the Google Firebase login. As a side note, there is the Google Maps API key listed in there - this is very insecure, and it should be deleted..
 
+[Back to Top](#table-of-contents)
+
 ## Built With
 
 * [Materialize](http://materializecss.com/) - "A modern responsive front-end framework based on Material Design (by Google)". Materialize is the UI toolkit mentioned above, and provides a nice alternative to the popular Twitter's Bootstrap.
@@ -106,11 +32,15 @@ Otherwise, if you want to check out the code, you will find that we have a very 
 * [Algolia Search](https://www.algolia.com/) - Used the Algolia Search API to query our JSON database for medicine that relieves symptoms, as mentioned above. 
 * [Google Maps API](https://developers.google.com/maps/) - Linked to the Google Maps API to allow the user to search for pharmacies, doctors and hospitals in a 25 mile radius. There are a few issues related to this API, and one glaring issue is that the location finder for Hospitals is hard-coded to UMass Amherst only, as opposed to taking the user's current location.
 
+[Back to Top](#table-of-contents)
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. 
 
 - We are very graciously stealing that writeup for our own project. Thank you!
+
+[Back to Top](#table-of-contents)
 
 ## Authors
 
@@ -121,12 +51,18 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 See also the list of [contributors](https://github.com/perrywarner/Hack-UMass-2017/graphs/contributors) who participated in this project.
 
+[Back to Top](#table-of-contents)
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
+
+[Back to Top](#table-of-contents)
 
 ## Acknowledgments
 
 * Great job to Kathy for doing so much with Raspberry Pi and MQTT! Ultimately, this feature was a bit too ambitious for a two-day hackathon, as an Automated Pill Dispenser is something that could take months. We apologize that this Github Repository doesn't reflect just how much time and effort you put into this.
 * Good job to Amanda Morrison for writing a lot of code that ended up in the final version, given that she is still currently taking only the third computer science class: Data Structures!
+
+[Back to Top](#table-of-contents)
 
